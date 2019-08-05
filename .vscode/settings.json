@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "onWindowChange",
+    "editor.tabCompletion": "on",
+    "emmet.triggerExpansionOnTab": true
+}
