@@ -10,7 +10,7 @@ console.log(11 % 3 ** 2);   // 2
 // Digita 2 numeros y mostra su suma, resta, multiplicacion, division, potencia y residuo.
 var numero = parseInt( prompt("Digite su primer numero") );
 var numeros = parseInt( prompt("Digite su segundo numero") );
-
+/*
 console.log(`El primer numero es ${numero} y el segundo es ${numeros}`);
 console.log(`${numero} + ${numeros} = ${numero + numeros}`);
 console.log(`${numero} - ${numeros} = ${numero - numeros}`);
@@ -18,4 +18,36 @@ console.log(`${numero} * ${numeros} = ${numero * numeros}`);
 console.log(`${numero} / ${numeros} = ${numero / numeros}`);
 console.log(`${numero} ** ${numeros} = ${numero ** numeros}`);
 console.log(`${numero} % ${numeros} = ${numero % numeros}`);
-
+*/
+// 1
+if (numero == numeros) {
+    console.log(`Los numeros son iguales`);
+}
+// 2
+if (numero != numeros) {
+    console.log(`Los numeros son diferentes`);
+}
+// 3
+if (numero > numeros) {
+    console.log(`El primer numero es mayor que el segundo`);
+}
+// 4
+if (numeros > numero) {
+    console.log(`El primer numero es menor que el segundo`);
+}
+// 5
+if (numero < numeros) {
+    console.log(`El primer numero es menor que el segundo`);
+}
+// 6
+if (numeros < numero) {
+    console.log(`El segundo numero es menor que el primero`);
+}
+// 7
+if (numero >= numeros) {
+    console.log(`El primer numero es mayor o igual que el segundo`);
+}
+// 8
+if (numeros >= numero) {
+    console.log(`El segundo numero es mayor o igual que el primero`);
+}
