@@ -73,7 +73,7 @@ console.log(`Quieres que te paguen este dinero: ${personaje.pagoHora}`);
 console.log(`Quieres que te paguen este dinero; ${personaje.ganadoHorasTrabajadas} por 
 las horas que solicitas.`);
 
-if (personaje.ganadoHorasTrabajadas <= 999999) {
+if (personaje.ganadoHorasTrabajadas <= 2999) {
     console.log(`Gracias por completar el formulario, serás aceptado en 
 Tropicall, por favor esperar dentro de ${personaje.horasTrabajadas} meses, 
 para comenzar a trabjar en Tropicall.`);
