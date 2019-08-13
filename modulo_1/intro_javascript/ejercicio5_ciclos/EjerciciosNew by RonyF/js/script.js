@@ -96,6 +96,10 @@ if (naciemiento > 0) {
 
 var dia = parseInt( prompt(`Escriba un dia de la semana del 1 al 7.`) );
 
+while(dia > 1, dia < 7) {
+    dia = parseInt( prompt(`Escriba un dia de la semana del 1 al 7.`) );
+}
+
 if (dia === 1) {
     alert(`El dia que escribio, es el Domingo.`);
 } else if (dia === 2) {
