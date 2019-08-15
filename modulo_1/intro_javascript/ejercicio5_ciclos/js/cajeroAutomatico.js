@@ -6,66 +6,89 @@ var cliente = {
     edad: 25,
     balance: 20000,
     tarjeta: 787896,
-    pin: 9999,
+    pin: 1122,
     tipoCuenta: "debito", 
 }
-
+/*
 // 0. Seleccionar idioma
-var idioma = prompt("Seleccionar su idioma, que prefiera.");
+var idioma = prompt("Escriba su idioma, que prefiera:");
+while(idioma === null || idioma === ""){
+    var idioma = prompt("Escriba su idioma, que prefiera:");
+}
 
 // 1. Introducir tarjeta
-var tarjeta = prompt("Introduzca la tarjeta de 6 digitos, por favor");
+var tarjeta = prompt("Escriba la tarjeta de 6 digitos, por favor.");
+while(tarjeta === null || tarjeta === ""){
+    var tarjeta = prompt("Escriba la tarjeta de 6 digitos, por favor.");
+}
 
 // Validar que la cantidad de digito sea 6
-while(tarjeta.length !== 6){
-    tarjeta = prompt("Introduzca una tarjeta de 6 digitos, otra vez.");
+while(tarjeta.length !== 6 || tarjeta === null || tarjeta === "") {
+    tarjeta = prompt("Escriba la tarjeta de 6 digitos, otra vez.");
 }
 alert("Es una tarjeta de 6 digitos.");
 
 // Validar que la tarjeta ingresada coincida con la mia
 var tarjeta = prompt("Introduzca la tarjeta valida:");
-while (tarjeta != cliente.tarjeta) {
+while (tarjeta != cliente.tarjeta || tarjeta === null || tarjeta === "") {
     tarjeta = prompt("Introduzca la tarjeta valida, otra vez.");
 }
 alert("Su tarjeta es valida.");
 
 // 2.  Digitar PIN
-var pin = prompt("Digitar su PIN.");v
-
-if (pin.length > 4) {
-    alert("PIN invalido.")
+var pin = prompt("Escriba su PIN de 4 digitos.");
+while(pin === null || pin === "" || pin != cliente.pin){
+    pin = prompt("Escriba su PIN de 4 digitos, otra vez.");
 }
+alert("El pin es valido.");
 
 // 3.  Mostrar opciones
 //4. Seleccionar opcion
+var retiro = 1,
+avance = 2,
+chequear_balance = 3,
+deposito = 4;
+
 var opcion = prompt(`Seleccione la opciones que desea utilizar: 
     1. Retiro
     2. Avance
     3. Chequear balance
     4. Deposito`);
-
-var retiro = 1,
-    avance = 2,
-    chequear_balance = 3,
-    deposito = 4;
-
-if (retiro === 1) {
-    alert(`Elijio la opcion ${retiro}`);
-} else if (avance === 2) {
-    alert(`Elijio la opcion ${avance}`);
-} else if (chequear_balance === 3) {
-    alert(`Elijio la opcion ${chequear_balance}`);
-} else if (deposito === 4) {
-    alert(`Elijio la opcion ${deposito}`);
+while(opcion === null || opcion === "" || opcion < 0 || opcion > 5){
+        opcion = prompt(`Seleccione la opciones que desea utilizar: 
+    1. Retiro
+    2. Avance
+    3. Chequear balance
+    4. Deposito`);
 }
 
 // 5.  Seleccionar tipo de cuenta
 var tipoDeCuenta = prompt(`Seleccione el tipo de cuenta:
     1. Cuenta de ahorro.
     2. Cuenta corriente.`);
+while(tipoDeCuenta != null || tipoDeCuenta != "" || tipoDeCuenta < 0 || tipoDeCuenta > 3){
+    tipoDeCuenta = prompt(`Seleccione el tipo de cuenta:
+    1. Cuenta de ahorro.
+    2. Cuenta corriente.`);  
+}
 
+tipoDeCuenta = prompt("Escribe el tipo de cuenta valida:");
+while(tipoDeCuenta != null || tipoDeCuenta != "" || tipoDeCuenta != cliente.tipoCuenta){
+    tipoDeCuenta = prompt("Escribe el tipo de cuenta valida, otra vez:");
+}
+alert("La cuenta es valida.");
+*/
 // 6.  Mostrar opciones de monto
 // 7.  Seleccionar monto
+var monto1 = 1,
+    monto2 = 2,
+    monto3 = 3,
+    monto4 = 4,
+    monto5 = 5,
+    monto6 = 6,
+    monto7 = 7,
+    monto8 = 8;
+
 var opcionesMonto = prompt(`Elija el monto que quiere usar:
     1. 200$
     2. 500$
@@ -75,22 +98,24 @@ var opcionesMonto = prompt(`Elija el monto que quiere usar:
     6. 2500$
     7. 3000$
     8. Escriba el monto que quiere utilizar...`);
-
-    var monto1 = 1,
-        monto2 = 2,
-        monto3 = 3,
-        monto4 = 4,
-        monto5 = 5,
-        monto6 = 6,
-        monto7 = 7,
-        monto8 = 8;
-
-if (monto1 = 1) {
-    alert(`El monto eligido`);
+while(opcionesMonto === null || opcionesMonto === NaN || opcionesMonto < 0 || opcionesMonto > 9){
+var opcionesMonto = prompt(`Elija el monto que quiere usar:
+    1. 200$
+    2. 500$
+    3. 1000$
+    4. 1500$
+    5. 2000$
+    6. 2500$
+    7. 3000$
+    8. Escriba el monto que quiere utilizar...`);
+}
+if(monto8 === "8"){
+    prompt("Escriba un monto que quiere utilizar:");
 }
 
+
 // 8.  Mostrar opcion de recibo
-var quiereComprobanete = confirm(`¿Desea un comprobante`);
+var quiereComprobanete = confirm(`¿Desea un comprobante?`);
 
 // 9.  Elegir si o no del comprobate del recibo
 if (quiereComprobanete) {
