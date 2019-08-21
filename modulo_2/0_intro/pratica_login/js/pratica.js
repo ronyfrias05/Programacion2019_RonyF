@@ -7,13 +7,13 @@ if (input1 != null || input1 != "") {
 }
 
 function validarInput() {
-    alert("Hola");
+    // alert("Hola");
 }
 
 input1.addEventListener("click", validarInput);
 
 function validarPass() {
-    alert("Hola");
+    // alert("Hola");
 }
 
 pass.addEventListener("click", validarPass);

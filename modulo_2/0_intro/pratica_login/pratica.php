@@ -14,21 +14,36 @@
         <div class="form-group">
             <label for="exampleInputEmail1" class="text-white">Agrega un Email:</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Agrega un Email" name="exampleInputEmail1">
+                placeholder="Agrega un Email" name="email">
             <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electronico con nadie.</small>
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1" class="text-white">Contraseña:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña:" name="exampleInputPassword1">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña:" name="password">
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input bg-white" id="exampleCheck1">
+            <input type="checkbox" class="form-check-input bg-white" id="exampleCheck1" name="exampleCheck1">
             <label class="form-check-label text-white" for="exampleCheck1">Marca esta cajita.</label>
         </div>
-        <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
+        <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
     </form>
 
-    <script src="js/pratica.js"></script>
+    <?php
+
+    if (isset($_GET)) {
+        $usuario = new stdClass();
+        $usuario->correo = $_GET['email'];
+        $usuario->contrasena = $_GET['password'];
+
+        echo "<div class='alert alert-success'>";
+        echo "<p>Hola, se te enviar un correo a $usuario->correo</p>";
+        echo "<p>Tu contraseña es $usuario->contrasena. No la compartas.</p>";
+        echo "</div>";
+    }
+
+    ?>
+
+    <!-- <script src="js/pratica.js"></script> -->
 </body>
 
 </html>
