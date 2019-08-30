@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Subir archivo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     <div class="container">
-        <div class="border w-50 mx-auto my-5">
+        <div class="border w-50 mx-auto my-5 animated bounceInDown">
             <h1 class="display-4 text-center">Subir archivo</h1>
             <div class="mb-4">
             <form action="" method="post" enctype="multipart/form-data" class="form-gruop">

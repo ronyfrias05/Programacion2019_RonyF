@@ -3,31 +3,50 @@
 $error = "";
 $mensaje = "";
 
-if (isset($_POST['subir'])) {
+if(isset($_POST['subir'])) {
     // echo "<pre>";
     // print_r($_FILES);
     // echo "</pre>";
 
-    if (isset($_POST['archivo']) && ($_FILES['archivo']['error']) == 0) {
+    if (isset($_FILES['archivo']) && ($_FILES['archivo']['error']) == 0) {
         $nombre = $_FILES['archivo']['name'];
         $nombre_tmp = $_FILES['archivo']['tmp_name'];
         $tamano = $_FILES['archivo']['size'];
 
-        if (is_uploaded_file($nombre_tmp)) {
-            $mensaje= "<div><p>Hemos recibido el archivo</p></div>";
+        echo "Tamano: " . $tamano;
 
-            // Mover el archivo a nuestra carpeta
-            $movido = move_uploaded_file($nombre_tmp, "archivos_reicibidos/".$nombre);
+        $tamano_maximo = 2048; // 2KB
 
-            if ($movido) {
-                $mensaje = "El archivo se subio correctacmente";
-            } else {
-                $error = "No se pudo subir correctamente";
-            }
+        if ($tamano > $tamano_maximo) {
+            $error = "El archivo no puede ser mayor a 2KB";
         }
 
-    } else {
-        $error = "No se ha enviado un archivo";
+        if(is_uploaded_file($nombre_tmp)) {
+            $mensaje = "<div class='alert alert-success'>Hemos recibido el archivo</div>";
+
+            $directorio = 'archivos_recibidos';
+
+            if(file_exists($directorio)) {
+                echo "<div class='alert alert-primary w-75 mx-auto'>El directorio existe</div>";
+
+                // Mover el archivo a nuestra carpeta, tambien sirve para verificar que no suba el archivo si el directorio no existe
+                $movido = move_uploaded_file($nombre_tmp, "archivos_recibidos/" .$nombre);
+
+                if($movido) {
+                    $mensaje = "<div class='alert alert-success w-75 mx-auto'>El archivo se subio correctamente</div>";
+                }else {
+                    $error = "<div class='alert alert-success w-75 mx-auto'>No se pudo mover correctamente</div>";
+                }
+                }else {
+                    echo "<div class='alert alert-warning w-75 mx-auto'>El directorio no existe</div>";
+                }
+
+        }else {
+            $error = "<div class='alert alert-danger w-75 mx-auto'>No se a enviado un archivo</div>";
+        }
+        
+    }else {
+        $error = "<div class='alert alert-warning w-75 mx-auto'>No se pudo recibir el archivo</div>";
     }
 }
 
