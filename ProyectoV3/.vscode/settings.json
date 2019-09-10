@@ -1,0 +1,6 @@
+{
+    "editor.wordWrapColumn": 100,
+    "files.autoSave": "onWindowChange",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "wordWrapColumn"
+}

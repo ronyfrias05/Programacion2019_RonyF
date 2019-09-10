@@ -1,0 +1,24 @@
+body {
+    font-family: 'TitilliumWeb-Regular', 'sans-serif';
+}
+
+#texto{
+    background: rgba(159, 224, 255, 0.2);
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact {
+    background: url(../img/img2.png);
+}
+#info-one {
+    background: url(../img/img2.png);
+}
+#header {
+    background: url(../img/img2.png);
+}
+
+footer {
+    background: rgba(159, 224, 255, 0.2);
+}

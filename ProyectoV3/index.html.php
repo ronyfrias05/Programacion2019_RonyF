@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ProyectoV2</title>
+    <title>ProyectoV3</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/TitilliumWeb-Regular.ttf">
@@ -108,19 +108,19 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="formMessage">
-                        <form class="card my-5">
+                        <form method="post" class="card my-5">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Nombre" class="form-control">
+                                    <input type="text" placeholder="Nombre" class="form-control" name="nombre">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" placeholder="Email" class="form-control">
+                                    <input type="email" placeholder="Email" class="form-control" name="apellido">
                                 </div>
                                 <div class="form-gruop">
                                     <textarea cols="30" rows="10" placeholder="Mensaje"
-                                        class="form-control mb-2"></textarea>
+                                        class="form-control mb-2" name="mensaje" style="resize: none;"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-outline-secondary btn-block">Enviar</button>
+                                <button type="submit" class="btn btn-outline-secondary btn-block" name="enviar">Enviar</button>
                             </div>
                         </form>
                     </div>
