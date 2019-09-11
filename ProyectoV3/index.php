@@ -122,9 +122,9 @@
                                 </div>
                                 <button type="submit" class="btn btn-outline-secondary btn-block" name="enviar">Enviar</button>
                                 <?php
-                                    $nombre = $_POST['nombre'];
-                                    $apellido = $_POST['apellido'];
-                                    $mensaje = $_POST['mensaje'];
+                                    // $nombre = $_POST['nombre'];
+                                    // $apellido = $_POST['apellido'];
+                                    // $mensaje = $_POST['mensaje'];
 
                                     if (isset($_POST['enviar'])) {
                                         echo "<p class='alert alert-success my-1 text-center'>Tu mensaje a sido enviando al creador!!!</p>";

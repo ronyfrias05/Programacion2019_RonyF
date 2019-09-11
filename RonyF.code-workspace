@@ -6,6 +6,8 @@
 	],
 	"settings": {
 		"files.autoSave": "onWindowChange",
-		"emmet.triggerExpansionOnTab": true
+		"emmet.triggerExpansionOnTab": true,
+		"php.validate.executablePath": "C:/xampp/php/php.exe",
+		"php.validate.run": "onType",
 	}
 }
