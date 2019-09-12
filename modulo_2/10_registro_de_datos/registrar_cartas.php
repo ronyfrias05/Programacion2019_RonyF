@@ -23,24 +23,41 @@ try {
         }
 
         if (intval($precio) < 15) {
-            throw new Exception("El precio no puede ser menor que 15", 4);
+            throw new Exception("El precio no puede ser menor que 15", 3);
         }
 
-        // Insertar     
-        $sql = "INSERT INTO cartas
+        // Verificar que no exista en la base de datos
+        $sql = "SELECT id, name, link, price from cartas Where name LIKE '%$nombre%'  ";
+
+        $datos2 = $conexion->query($sql)->fetchAll();
+
+        if (count($datos2) > 0) {
+            throw new Exception("Ya existe este nombre. Elija otro", 1);
+        }
+
+        try {
+            // Insertar     
+            $sql = "INSERT INTO cartas
                 (name, link, price)
                 VALUES
                 (\"$nombre\", \"$url\", \"$precio\")";
 
-        $resultado = $conexion->exec($sql);
+                echo $sql;
 
-        if ($resultado) {
-            $mensaje = "Se guardaron los datos";
-        } else {
-            $mensaje = "No se pudieron guardar los datos";
+            $resultado = $conexion->exec($sql);
+
+            if ($resultado) {
+                $mensaje = "Se guardaron los datos";
+            } else {
+                $mensaje = "No se pudieron guardar los datos";
+            }
+
+            echo $mensaje;
+        } catch(PDOException $x) {
+            echo $x->getMessage();
         }
 
-        echo $mensaje;
+        
 
     }    
 
@@ -51,7 +68,9 @@ try {
         'mensaje' => $e->getMessage()
     ];
 
+    var_dump($e);
+
 }
 
 // Incluir la vista
-require_once 'vistas/registro_cartas.html.php';
+require_once 'vistas/registrar_cartas.html.php';
