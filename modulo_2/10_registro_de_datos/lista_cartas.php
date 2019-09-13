@@ -15,6 +15,7 @@ if (isset($_GET['buscar'])) {
     $sql = "SELECT id, name, link, price from cartas Where name like '%$busqueda%'";
 
     $datos = $conexion->query($sql)->fetchAll();
+
 }
 
 // Incluir la vista

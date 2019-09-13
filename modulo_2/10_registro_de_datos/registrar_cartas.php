@@ -34,15 +34,11 @@ try {
         if (count($datos2) > 0) {
             throw new Exception("Ya existe este nombre. Elija otro", 1);
         }
-
-        try {
             // Insertar     
             $sql = "INSERT INTO cartas
                 (name, link, price)
                 VALUES
                 (\"$nombre\", \"$url\", \"$precio\")";
-
-                echo $sql;
 
             $resultado = $conexion->exec($sql);
 
@@ -51,25 +47,16 @@ try {
             } else {
                 $mensaje = "No se pudieron guardar los datos";
             }
-
             echo $mensaje;
-        } catch(PDOException $x) {
-            echo $x->getMessage();
-        }
-
-        
-
     }    
 
 } catch(Exception $e) {
-    
     $error = [
         'codigo' => $e->getCode(),
         'mensaje' => $e->getMessage()
     ];
 
-    var_dump($e);
-
+    echo $e;
 }
 
 // Incluir la vista
