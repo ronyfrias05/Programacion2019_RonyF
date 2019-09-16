@@ -35,7 +35,7 @@
                                 <p class="card-text text-success">$ ' . $dato->price . '</p>
                                 <a href="ver_carta.php?id='.$dato->id.'" class="btn btn-outline-primary">Ver producto</a>
 
-                                <form method="post" action="borrar_carta.php">
+                                <form method="post" action="">
                                     <input type="hidden" name="id" value="'.$dato->id.'">
                                     <button class="btn btn-outline-danger d-inline-block btn-sm my-2" name="borrar">Borrar</button>
                                 </form>

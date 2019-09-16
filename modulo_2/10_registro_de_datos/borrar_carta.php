@@ -5,7 +5,11 @@ require_once 'conexion.php';
 if (isset($_POST['borrar'])) {
     $id = $_POST['id'];
 
-    $sql = "DELETE  from cartas where id = $id";
+    // Borrado fisico
+    // $sql = "DELETE  from cartas where id = $id";
+
+    // Borrado logico
+    $sql = "UPDATE cartas set activo = 0 where id = $id";
 
     $eliminando = $conexion->exec($sql);
     

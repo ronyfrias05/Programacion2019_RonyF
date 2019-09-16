@@ -2,7 +2,7 @@
 
 try {
     $DB_HOST = "localhost";
-    $DB_NAME = "productos";
+    $DB_NAME = "app";
     $DB_USER = "root";
     $DB_PASS = "";
     // $config = [
