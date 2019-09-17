@@ -10,14 +10,14 @@ if (isset($_POST['login'])) {
 
 
     // Buscar esos datos en la base datos
-    $sql = "SELECT id, name, username from users where username = '$username' and password = '$password' ";
+    $sql = "SELECT id, username from users where username = '$username' and password = '$password' ";
 
-    $resultado = $conexion->query($sql)->fecth();
+    $resultado = $conexion->query($sql)->fetch();
 
     if ($resultado) {
         // Iniciar sesion
         $_SESSION['id_user'] = $resultado->id;
-        $_SESSION['name_user'] = $resultado->name;
+        $_SESSION['username_user'] = $resultado->username;
 
         header("Location: registro_cartas.php");
         exit;

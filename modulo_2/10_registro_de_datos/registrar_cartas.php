@@ -1,6 +1,8 @@
 <?php
-
+// Incluir la conexion
 require_once 'conexion.php';
+
+session_start();
 
 try {
     // Guardar los datos
@@ -34,11 +36,14 @@ try {
         if (count($datos2) > 0) {
             throw new Exception("Ya existe este nombre. Elija otro", 1);
         }
+
+        $id_user = $_SESSION ['id_user'];
+
             // Insertar     
             $sql = "INSERT INTO cartas
-                (name, link, price)
+                (name, link, price, create_by)
                 VALUES
-                (\"$nombre\", \"$url\", \"$precio\")";
+                (\"$nombre\", \"$url\", \"$precio\", \"$id_user\")";
 
             $resultado = $conexion->exec($sql);
 

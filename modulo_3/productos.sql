@@ -1,3 +1,0 @@
--- create database productos;
--- use productos;
--- truncate cartas;
