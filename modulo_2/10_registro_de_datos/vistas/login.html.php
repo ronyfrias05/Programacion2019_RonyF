@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body>
+<body style="background-image: linear-gradient(20deg, #D6DBDF, #D0ECE7, #D1F2EB ); background-attachment: fixed; background-repeat: no-repeat;">
     <div class="container">
         <div class="row">
-            <form class="form-signin my-5 border rounded col-md-5 mx-auto" method="post">
+            <form class="form-signin my-5 border rounded col-md-5 mx-auto animated bounceIn" method="post" style="background-color: white;">
                 <div class="text-center mb-4">
                     <img class="my-3" src="img/img.svg" alt="" width="72" height="72">
-                    <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+                    <h1 class="h3 mb-3 font-weight-normal" style="background: linear-gradient(#51ECFF, #5CCEFF, #5CB2FF); -webkit-background-clip: text; color: transparent;">Iniciar Sesión</h1>
                     <p>Inicia sección para un uso mas dinamico en la pagina.</p>
                 </div>
 
@@ -33,11 +33,11 @@
                 </div>
 
                 <div class="row">
-                    <button class="btn btn-md btn-outline-primary btn-black col-md-9 mx-auto" type="submit" name="login">Iniciar sesión</button>
+                    <button class="btn btn-md btn-outline-secondary btn-black col-md-9 mx-auto" type="submit" name="login">Iniciar sesión</button>
                 </div>
 
                 <div class="row">
-                    <a href="registrar_pagina.php" class="mx-auto text-center col-md-9 my-1 text-decoration-none">Registrarse</a>
+                    <a href="registrar_usuarios.php" class="mx-auto text-center col-md-9 my-1 text-decoration-none text-info">Registrarse</a>
                 </div>
 
                 <p class="mt-2 mb-3 text-muted text-center">&copy; 2017-2019</p>

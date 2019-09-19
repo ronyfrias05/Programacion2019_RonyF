@@ -1,8 +1,15 @@
 <?php
-// Incluir la conexion
-require_once 'conexion.php';
 
 session_start();
+
+// Verificar si el usuario esta logeado
+if (! isset($_SESSION['id_user'])) {
+    header("Location: login.php");
+    exit;
+}
+
+// Incluir la conexion
+require_once 'conexion.php';
 
 try {
     // Guardar los datos
@@ -29,7 +36,7 @@ try {
         }
 
         // Verificar que no exista en la base de datos
-        $sql = "SELECT id, name, link, price from cartas Where name LIKE '%$nombre%'  ";
+        $sql = "SELECT id, name from cartas Where name LIKE '%$nombre%'  ";
 
         $datos2 = $conexion->query($sql)->fetchAll();
 
@@ -41,7 +48,7 @@ try {
 
             // Insertar     
             $sql = "INSERT INTO cartas
-                (name, link, price, create_by)
+                (name, link, price, created_by)
                 VALUES
                 (\"$nombre\", \"$url\", \"$precio\", \"$id_user\")";
 
@@ -49,10 +56,11 @@ try {
 
             if ($resultado) {
                 $mensaje = "Se guardaron los datos";
+                // Limpiar el post
+                $_POST = [];
             } else {
                 $mensaje = "No se pudieron guardar los datos";
             }
-            echo $mensaje;
     }    
 
 } catch(Exception $e) {
@@ -60,8 +68,6 @@ try {
         'codigo' => $e->getCode(),
         'mensaje' => $e->getMessage()
     ];
-
-    echo $e;
 }
 
 // Incluir la vista

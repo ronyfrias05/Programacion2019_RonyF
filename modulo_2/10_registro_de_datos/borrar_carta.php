@@ -9,7 +9,7 @@ if (isset($_POST['borrar'])) {
     // $sql = "DELETE  from cartas where id = $id";
 
     // Borrado logico
-    $sql = "UPDATE cartas set activo = 0 where id = $id";
+    $sql = "UPDATE cartas SET activo = 0 where id = $id";
 
     $eliminando = $conexion->exec($sql);
     
