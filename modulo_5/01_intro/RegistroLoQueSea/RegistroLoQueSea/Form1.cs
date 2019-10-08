@@ -61,5 +61,25 @@ namespace RegistroLoQueSea
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            btnRegistro.BackColor = Color.Turquoise;
+        }
+
+        private void btnRegistro_MouseLeave(object sender, EventArgs e)
+        {
+            btnRegistro.BackColor = Color.White;
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gracias por registrarte!");
+        }
     }
 }
