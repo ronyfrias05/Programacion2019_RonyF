@@ -16,5 +16,36 @@ namespace GitHub
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/join");
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/enterprise");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Llamar el formulario que queremos usar
+            var formularioSignIn = new FormSignIn();
+
+            // Mostrar el formulario
+            formularioSignIn.Show();
+
+            // Cerrar el actual
+            // this.Close();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Lamar al formulario FormConfigure
+            var formularioFormConfigure = new FormConfigure();
+
+            // Mostrar el formulario
+            formularioFormConfigure.Show();
+        }
     }
 }

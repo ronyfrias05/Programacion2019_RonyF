@@ -16,5 +16,40 @@ namespace GitHub
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormSignIn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Cerramos el FormSignIn
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Lamar al formulario FormConfigure
+            var formularioFormConfigure = new FormConfigure();
+
+            // Mostrar el formulario
+            formularioFormConfigure.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/password_reset");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/login");
+        }
     }
 }

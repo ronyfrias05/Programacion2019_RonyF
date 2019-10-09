@@ -76,6 +76,12 @@
     <EmbeddedResource Include="FormConfigure.resx">
       <DependentUpon>FormConfigure.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMake.resx">
+      <DependentUpon>FormMake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignIn.resx">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
