@@ -105,11 +105,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(97, 418);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = false;
@@ -120,7 +121,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(189, 418);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 30);
+            this.button2.Size = new System.Drawing.Size(63, 32);
             this.button2.TabIndex = 7;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;

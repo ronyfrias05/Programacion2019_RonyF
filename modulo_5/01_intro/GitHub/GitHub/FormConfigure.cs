@@ -19,7 +19,8 @@ namespace GitHub
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // Cerramos el formulario
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
