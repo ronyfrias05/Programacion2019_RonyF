@@ -44,7 +44,7 @@ namespace GitHub
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            lblcommit.Text = txtName.Text + " " + "committed 30 minutes ago"; 
         }
 
         private void label3_Click(object sender, EventArgs e)

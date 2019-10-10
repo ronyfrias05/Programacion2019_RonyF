@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,10 +40,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblcommit = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -80,14 +79,15 @@
             this.label3.Text = "Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(97, 289);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(446, 25);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(97, 289);
+            this.txtName.MaxLength = 27;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(446, 25);
+            this.txtName.TabIndex = 3;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -169,16 +169,16 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // lblcommit
             // 
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label7.Location = new System.Drawing.Point(175, 550);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(333, 22);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "committed 30 minutes ago";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblcommit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcommit.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.lblcommit.Location = new System.Drawing.Point(129, 550);
+            this.lblcommit.Name = "lblcommit";
+            this.lblcommit.Size = new System.Drawing.Size(333, 22);
+            this.lblcommit.TabIndex = 11;
+            this.lblcommit.Text = "committed 30 minutes ago";
+            this.lblcommit.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -198,35 +198,22 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // txtlabel
-            // 
-            this.txtlabel.AutoSize = true;
-            this.txtlabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlabel.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtlabel.Location = new System.Drawing.Point(129, 550);
-            this.txtlabel.Name = "txtlabel";
-            this.txtlabel.Size = new System.Drawing.Size(43, 17);
-            this.txtlabel.TabIndex = 14;
-            this.txtlabel.Text = "label9";
-            this.txtlabel.Click += new System.EventHandler(this.txtlabel_Click);
-            // 
             // FormConfigure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1284, 721);
-            this.Controls.Add(this.txtlabel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblcommit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -248,7 +235,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
@@ -256,10 +243,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblcommit;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label txtlabel;
 
     }
 }
