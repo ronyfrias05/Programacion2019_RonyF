@@ -50,7 +50,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlText;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label1.Location = new System.Drawing.Point(156, 190);
+            this.label1.Location = new System.Drawing.Point(171, 205);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 30);
             this.label1.TabIndex = 1;
