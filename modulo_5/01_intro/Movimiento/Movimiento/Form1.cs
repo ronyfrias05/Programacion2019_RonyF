@@ -67,13 +67,16 @@ namespace Movimiento
                 anchoPadre = this.Width;
                 anchoHijo = label1.Width;
                 
-                centroX = (anchoPadre + anchoHijo) / 2;
-
                 // CentroY
                 alturaPadre = this.Height;
                 alturaHijo = label1.Height;
 
-                centroY = (alturaPadre + alturaHijo) / 2;
+                // Bordes
+                var bordeX = 18;
+                var bordeY = 47;
+
+                centroX = (anchoPadre / 2) - (anchoHijo / 2) - bordeX;
+                centroY = (alturaPadre / 2 ) - (alturaHijo / 2) - bordeY;
 
                 // MessageBox.Show("Punto de inicio");
                 label1.Location = new System.Drawing.Point(centroX, centroY);
@@ -82,7 +85,21 @@ namespace Movimiento
             // Raimbow color
             if (keyValue == 67)
             {
-                MessageBox.Show("Color cambiado");
+                // MessageBox.Show("Color cambiado");
+
+                var random = new Random();
+
+                // var numeroAleatorio = random.Next(0, 255);
+                var red = random.Next(255);
+                var green = random.Next(255);
+                var blue = random.Next(255);
+                
+                // Listado de colores
+
+                // Color[] colores = {Color.Blue, Color.Red, Color.Green, Color.Pink, Color.SaddleBrown};
+
+                label1.BackColor = Color.FromArgb(red, green, blue);
+                label2.ForeColor = Color.FromArgb(red, green, blue);
             }
 
             // Izquierda
