@@ -12,6 +12,8 @@ namespace Movimiento
 {
     public partial class Form1 : Form
     {
+        public bool mouseActivado = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -100,7 +102,50 @@ namespace Movimiento
 
                 label1.BackColor = Color.FromArgb(red, green, blue);
                 label2.ForeColor = Color.FromArgb(red, green, blue);
+                label3.ForeColor = Color.FromArgb(red, green, blue);
+                label4.ForeColor = Color.FromArgb(red, green, blue);
+                label5.ForeColor = Color.FromArgb(red, green, blue);
+                label6.ForeColor = Color.FromArgb(red, green, blue);
+                label7.ForeColor = Color.FromArgb(red, green, blue);
+                label8.ForeColor = Color.FromArgb(red, green, blue);
             }
+
+            // Usando el mouse
+            if (keyValue == 77)
+            {              
+                // Si esta activo
+                if (mouseActivado)
+                {
+                    // MessageBox.Show("Este es el boton M");
+                mouseActivado = false;
+
+                lblFlag.Text = "Desactivado";
+                }
+                else
+                {
+                    // MessageBox.Show("Este es el boton M");
+                    mouseActivado = true;
+
+                    lblFlag.Text = "Activado";
+                }
+            }
+
+            // MessageBox.Show(keyValue.ToString());
+
+            // Disminuir el tamaño
+            if (keyValue == 109)
+            {
+                label1.Size = new Size(30, 30);
+            }
+
+            // Aumentar tamaño al cubito
+            if (keyValue == 107) 
+            {
+                label1.Size = new Size(60, 60);
+            }
+            
+            if (mouseActivado == false)
+            {
 
             // Izquierda
             if (keyValue == 37) {
@@ -209,6 +254,8 @@ namespace Movimiento
                 label2.Text = label1.Location.ToString();
             }
 
+            }
+
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -227,6 +274,47 @@ namespace Movimiento
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // MessageBox.Show("Te esta moviendo");
+
+            if (mouseActivado) 
+            {
+                var locationX = e.Location.X;
+                var locationY = e.Location.Y;
+
+                label1.Location = new System.Drawing.Point(locationX, locationY);
+            }
+
+            //System.Diagnostics.Trace.WriteLine(location);
+        }
+
+        private void label1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // MessageBox.Show("Move");
+            // System.Diagnostics.Trace.WriteLine("Yo te seguire");
+        }
+
+        private void lblFlag_Click(object sender, EventArgs e)
         {
 
         }
