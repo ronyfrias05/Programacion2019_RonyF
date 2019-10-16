@@ -108,6 +108,7 @@ namespace Movimiento
                 label6.ForeColor = Color.FromArgb(red, green, blue);
                 label7.ForeColor = Color.FromArgb(red, green, blue);
                 label8.ForeColor = Color.FromArgb(red, green, blue);
+                lblFlag.ForeColor = Color.FromArgb(red, green, blue);
             }
 
             // Usando el mouse
@@ -135,13 +136,21 @@ namespace Movimiento
             // Disminuir el tamaño
             if (keyValue == 109)
             {
-                label1.Size = new Size(30, 30);
+                if (label1.Width > 5)
+                {
+                    label1.Width -= 1;
+                    label1.Height -= 1;
+                }
             }
 
             // Aumentar tamaño al cubito
             if (keyValue == 107) 
             {
-                label1.Size = new Size(60, 60);
+
+                if (label1.Width < 100) {
+                    label1.Width += 1;
+                    label1.Height += 1;
+                }
             }
             
             if (mouseActivado == false)

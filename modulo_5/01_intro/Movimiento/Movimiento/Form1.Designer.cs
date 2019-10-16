@@ -142,7 +142,7 @@
             // 
             this.lblFlag.AutoSize = true;
             this.lblFlag.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFlag.Location = new System.Drawing.Point(394, 267);
+            this.lblFlag.Location = new System.Drawing.Point(394, 251);
             this.lblFlag.Name = "lblFlag";
             this.lblFlag.Size = new System.Drawing.Size(78, 16);
             this.lblFlag.TabIndex = 9;
