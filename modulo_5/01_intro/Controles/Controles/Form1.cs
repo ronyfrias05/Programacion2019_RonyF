@@ -113,7 +113,11 @@ namespace Controles
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            var ordenar = checkBox2.Checked;
+            // Forma corta // Solo funciona con valores booleanos // 1 o 0
+            listBox1.Sorted = checkBox2.Checked;
+
+            // Forma larga
+            /*var ordenar = checkBox2.Checked;
 
             if (ordenar)
             {
@@ -122,7 +126,12 @@ namespace Controles
             else
             {
                 listBox1.Sorted = false;
-            }
+            }*/
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
