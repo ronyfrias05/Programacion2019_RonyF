@@ -46,5 +46,55 @@ namespace Controles
 
             textBox1.Text = "";
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           // Mostrar el colorDialog
+           // colorDialog1.ShowDialog();
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK) 
+            {
+                tabPage3.BackColor = colorDialog1.Color;
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var texto = textBox3.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("Debe escribir un texto");
+                return;
+            }
+
+            listBox1.Items.Add(texto);
+
+            textBox3.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var seleccionar = listBox1.SelectedItem;
+
+            if (seleccionar == null)
+            {
+                MessageBox.Show("Debe seleccionar un elemnto de la lista");
+                return;
+            }
+
+            // Eleminar
+            listBox1.Items.Remove(seleccionar);
+        }
     }
 }
