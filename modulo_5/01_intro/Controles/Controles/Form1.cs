@@ -96,5 +96,33 @@ namespace Controles
             // Eleminar
             listBox1.Items.Remove(seleccionar);
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            var chequeado = checkBox1.Checked;
+
+            if (chequeado) 
+            {
+                listBox1.SelectionMode = SelectionMode.MultiSimple;
+            }
+            else
+            {
+                listBox1.SelectionMode = SelectionMode.One;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            var ordenar = checkBox2.Checked;
+
+            if (ordenar)
+            {
+                listBox1.Sorted = true;
+            }
+            else
+            {
+                listBox1.Sorted = false;
+            }
+        }
     }
 }
