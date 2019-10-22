@@ -72,7 +72,7 @@
             this.btnNumeros = new System.Windows.Forms.Button();
             this.valor1 = new System.Windows.Forms.NumericUpDown();
             this.valor2 = new System.Windows.Forms.NumericUpDown();
-            this.txtAno = new System.Windows.Forms.NumericUpDown();
+            this.txtAno = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,7 +90,6 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valor2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAno)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -563,14 +562,9 @@
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(17, 37);
-            this.txtAno.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.txtAno.Location = new System.Drawing.Point(19, 36);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(120, 22);
+            this.txtAno.Size = new System.Drawing.Size(118, 22);
             this.txtAno.TabIndex = 2;
             // 
             // Form1
@@ -595,6 +589,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -606,7 +601,6 @@
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.valor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valor2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAno)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,7 +651,7 @@
         private System.Windows.Forms.Button btnNumeros;
         private System.Windows.Forms.NumericUpDown valor2;
         private System.Windows.Forms.NumericUpDown valor1;
-        private System.Windows.Forms.NumericUpDown txtAno;
+        private System.Windows.Forms.TextBox txtAno;
     }
 }
 
