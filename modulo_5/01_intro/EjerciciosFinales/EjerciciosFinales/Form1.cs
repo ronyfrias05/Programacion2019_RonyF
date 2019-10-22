@@ -244,6 +244,9 @@ namespace EjerciciosFinales
             if(i%2 == 0)
             numerosAlCien.Text += i.ToString() + ", ";
             }
+           
+                btnNumeros.Enabled = false;
+            
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
