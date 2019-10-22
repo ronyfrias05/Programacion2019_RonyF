@@ -43,10 +43,36 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.valor1 = new System.Windows.Forms.TextBox();
+            this.valor2 = new System.Windows.Forms.TextBox();
+            this.btnH = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtNota1 = new System.Windows.Forms.TextBox();
+            this.txtNota2 = new System.Windows.Forms.TextBox();
+            this.txtNota3 = new System.Windows.Forms.TextBox();
+            this.txtNota4 = new System.Windows.Forms.TextBox();
+            this.btnNotas = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtS = new System.Windows.Forms.TextBox();
+            this.txtT = new System.Windows.Forms.TextBox();
+            this.btnD = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtAno = new System.Windows.Forms.TextBox();
+            this.btnEdad = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtDia = new System.Windows.Forms.TextBox();
+            this.btnSemana = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtMes = new System.Windows.Forms.TextBox();
+            this.btnAno = new System.Windows.Forms.Button();
+            this.btnNumeros = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.listNumeros = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -55,6 +81,13 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -75,9 +108,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -91,6 +121,7 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -102,6 +133,7 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(581, 430);
@@ -112,6 +144,7 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.groupBox4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(581, 430);
@@ -121,6 +154,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.groupBox5);
             this.tabPage5.Controls.Add(this.label5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
@@ -131,6 +165,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.groupBox6);
             this.tabPage6.Controls.Add(this.label6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -142,6 +177,7 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.label7);
+            this.tabPage7.Controls.Add(this.groupBox7);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(581, 430);
@@ -223,39 +259,299 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Imprimir los números pares del 1 al 100.";
             // 
-            // textBox1
+            // valor1
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.valor1.Location = new System.Drawing.Point(6, 30);
+            this.valor1.Name = "valor1";
+            this.valor1.Size = new System.Drawing.Size(100, 22);
+            this.valor1.TabIndex = 1;
             // 
-            // textBox2
+            // valor2
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.valor2.Location = new System.Drawing.Point(112, 30);
+            this.valor2.Name = "valor2";
+            this.valor2.Size = new System.Drawing.Size(100, 22);
+            this.valor2.TabIndex = 2;
             // 
-            // button1
+            // btnH
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(277, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Calcular hipotenusa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnH.Location = new System.Drawing.Point(218, 29);
+            this.btnH.Name = "btnH";
+            this.btnH.Size = new System.Drawing.Size(132, 23);
+            this.btnH.TabIndex = 3;
+            this.btnH.Text = "Calcular hipotenusa";
+            this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(49, 126);
+            this.groupBox1.Controls.Add(this.btnH);
+            this.groupBox1.Controls.Add(this.valor1);
+            this.groupBox1.Controls.Add(this.valor2);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(65, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 70);
+            this.groupBox1.Size = new System.Drawing.Size(361, 70);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calculando";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.btnNotas);
+            this.groupBox2.Controls.Add(this.txtNota4);
+            this.groupBox2.Controls.Add(this.txtNota3);
+            this.groupBox2.Controls.Add(this.txtNota2);
+            this.groupBox2.Controls.Add(this.txtNota1);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(58, 44);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(414, 293);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Notas";
+            // 
+            // txtNota1
+            // 
+            this.txtNota1.Location = new System.Drawing.Point(33, 43);
+            this.txtNota1.Name = "txtNota1";
+            this.txtNota1.Size = new System.Drawing.Size(351, 22);
+            this.txtNota1.TabIndex = 0;
+            // 
+            // txtNota2
+            // 
+            this.txtNota2.Location = new System.Drawing.Point(33, 100);
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(351, 22);
+            this.txtNota2.TabIndex = 1;
+            // 
+            // txtNota3
+            // 
+            this.txtNota3.Location = new System.Drawing.Point(33, 156);
+            this.txtNota3.Name = "txtNota3";
+            this.txtNota3.Size = new System.Drawing.Size(351, 22);
+            this.txtNota3.TabIndex = 2;
+            // 
+            // txtNota4
+            // 
+            this.txtNota4.Location = new System.Drawing.Point(33, 215);
+            this.txtNota4.Name = "txtNota4";
+            this.txtNota4.Size = new System.Drawing.Size(351, 22);
+            this.txtNota4.TabIndex = 3;
+            this.txtNota4.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // btnNotas
+            // 
+            this.btnNotas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNotas.Location = new System.Drawing.Point(33, 254);
+            this.btnNotas.Name = "btnNotas";
+            this.btnNotas.Size = new System.Drawing.Size(351, 23);
+            this.btnNotas.TabIndex = 4;
+            this.btnNotas.Text = "Calcular las Notas";
+            this.btnNotas.UseVisualStyleBackColor = true;
+            this.btnNotas.Click += new System.EventHandler(this.btnNotas_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(30, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 16);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Nota 1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(30, 81);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 16);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Nota 2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(34, 137);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 16);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Nota 3";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(34, 196);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 16);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Nota 4";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnD);
+            this.groupBox3.Controls.Add(this.txtT);
+            this.groupBox3.Controls.Add(this.txtS);
+            this.groupBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(52, 63);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(385, 69);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "La distancia rrecorida";
+            // 
+            // txtS
+            // 
+            this.txtS.Location = new System.Drawing.Point(19, 30);
+            this.txtS.Name = "txtS";
+            this.txtS.Size = new System.Drawing.Size(100, 22);
+            this.txtS.TabIndex = 0;
+            // 
+            // txtT
+            // 
+            this.txtT.Location = new System.Drawing.Point(125, 31);
+            this.txtT.Name = "txtT";
+            this.txtT.Size = new System.Drawing.Size(100, 22);
+            this.txtT.TabIndex = 1;
+            this.txtT.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // btnD
+            // 
+            this.btnD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnD.Location = new System.Drawing.Point(231, 30);
+            this.btnD.Name = "btnD";
+            this.btnD.Size = new System.Drawing.Size(144, 23);
+            this.btnD.TabIndex = 2;
+            this.btnD.Text = "Calcular la distancia";
+            this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.btnD_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnEdad);
+            this.groupBox4.Controls.Add(this.txtAno);
+            this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(36, 40);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(227, 73);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "El año nacimiento";
+            // 
+            // txtAno
+            // 
+            this.txtAno.Location = new System.Drawing.Point(6, 37);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(100, 22);
+            this.txtAno.TabIndex = 0;
+            // 
+            // btnEdad
+            // 
+            this.btnEdad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEdad.Location = new System.Drawing.Point(112, 37);
+            this.btnEdad.Name = "btnEdad";
+            this.btnEdad.Size = new System.Drawing.Size(108, 23);
+            this.btnEdad.TabIndex = 1;
+            this.btnEdad.Text = "Ver tu edad";
+            this.btnEdad.UseVisualStyleBackColor = true;
+            this.btnEdad.Click += new System.EventHandler(this.btnEdad_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnSemana);
+            this.groupBox5.Controls.Add(this.txtDia);
+            this.groupBox5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(52, 34);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(278, 72);
+            this.groupBox5.TabIndex = 1;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Dia de la semana";
+            // 
+            // txtDia
+            // 
+            this.txtDia.Location = new System.Drawing.Point(6, 34);
+            this.txtDia.Name = "txtDia";
+            this.txtDia.Size = new System.Drawing.Size(100, 22);
+            this.txtDia.TabIndex = 0;
+            // 
+            // btnSemana
+            // 
+            this.btnSemana.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSemana.Location = new System.Drawing.Point(112, 33);
+            this.btnSemana.Name = "btnSemana";
+            this.btnSemana.Size = new System.Drawing.Size(156, 23);
+            this.btnSemana.TabIndex = 1;
+            this.btnSemana.Text = "Ver el dia de la semana";
+            this.btnSemana.UseVisualStyleBackColor = true;
+            this.btnSemana.Click += new System.EventHandler(this.btnSemana_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.btnAno);
+            this.groupBox6.Controls.Add(this.txtMes);
+            this.groupBox6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(68, 32);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(255, 69);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Meses del año";
+            // 
+            // txtMes
+            // 
+            this.txtMes.Location = new System.Drawing.Point(18, 33);
+            this.txtMes.Name = "txtMes";
+            this.txtMes.Size = new System.Drawing.Size(100, 22);
+            this.txtMes.TabIndex = 0;
+            // 
+            // btnAno
+            // 
+            this.btnAno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAno.Location = new System.Drawing.Point(124, 33);
+            this.btnAno.Name = "btnAno";
+            this.btnAno.Size = new System.Drawing.Size(116, 23);
+            this.btnAno.TabIndex = 1;
+            this.btnAno.Text = "Ver mes del año";
+            this.btnAno.UseVisualStyleBackColor = true;
+            this.btnAno.Click += new System.EventHandler(this.btnAno_Click);
+            // 
+            // btnNumeros
+            // 
+            this.btnNumeros.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNumeros.Location = new System.Drawing.Point(6, 30);
+            this.btnNumeros.Name = "btnNumeros";
+            this.btnNumeros.Size = new System.Drawing.Size(379, 23);
+            this.btnNumeros.TabIndex = 1;
+            this.btnNumeros.Text = "Ver ";
+            this.btnNumeros.UseVisualStyleBackColor = true;
+            this.btnNumeros.Click += new System.EventHandler(this.btnNumeros_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.listNumeros);
+            this.groupBox7.Controls.Add(this.btnNumeros);
+            this.groupBox7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(48, 41);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(391, 293);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Los numeros pares del 1 al 100";
+            // 
+            // listNumeros
+            // 
+            this.listNumeros.FormattingEnabled = true;
+            this.listNumeros.ItemHeight = 16;
+            this.listNumeros.Location = new System.Drawing.Point(6, 59);
+            this.listNumeros.Name = "listNumeros";
+            this.listNumeros.Size = new System.Drawing.Size(379, 228);
+            this.listNumeros.TabIndex = 4;
             // 
             // Form1
             // 
@@ -264,10 +560,9 @@
             this.ClientSize = new System.Drawing.Size(613, 480);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EjerciciosFinales";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -278,6 +573,19 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -299,10 +607,36 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnH;
+        private System.Windows.Forms.TextBox valor2;
+        private System.Windows.Forms.TextBox valor1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnNotas;
+        private System.Windows.Forms.TextBox txtNota4;
+        private System.Windows.Forms.TextBox txtNota3;
+        private System.Windows.Forms.TextBox txtNota2;
+        private System.Windows.Forms.TextBox txtNota1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnD;
+        private System.Windows.Forms.TextBox txtT;
+        private System.Windows.Forms.TextBox txtS;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnEdad;
+        private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btnSemana;
+        private System.Windows.Forms.TextBox txtDia;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button btnAno;
+        private System.Windows.Forms.TextBox txtMes;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ListBox listNumeros;
+        private System.Windows.Forms.Button btnNumeros;
     }
 }
 
