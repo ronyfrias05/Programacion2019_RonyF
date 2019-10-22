@@ -142,7 +142,7 @@ namespace EjerciciosFinales
 
             var diaSemana = Convert.ToInt16(txtDia.Text);
             
-            if (diaSemana =< 0 || diaSemana >= 8) 
+            if (diaSemana <= 0 || diaSemana >= 8) 
             {
                 MessageBox.Show("No intentes lo que no se puede.");
                 return;
@@ -179,7 +179,7 @@ namespace EjerciciosFinales
 
             var mesAnio = Convert.ToInt16(txtMes.Text);
 
-            if (mesAnio =< 0 || mesAnio >= 12)
+            if (mesAnio <= 0 || mesAnio >= 12)
             {
                 MessageBox.Show("No intentes lo que no se puede.");
                 return;
