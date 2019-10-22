@@ -50,17 +50,21 @@ namespace EjerciciosFinales
         private void button1_Click(object sender, EventArgs e)
         {
             // La hipotenusa #1
+            if(string.IsNullOrEmpty(valor1.Text) || string.IsNullOrEmpty(valor2.Text))
+            {
+                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
+                return;
+            }
+
             var cateto1 = Convert.ToInt16(valor1.Text);
             var cateto2 = Convert.ToInt16(valor2.Text);
 
             var hipotenusa = Math.Sqrt(cateto1 * cateto1 + cateto2 * cateto2);
 
-            if(string.IsNullOrEmpty(valor1.Text)||string.IsNullOrEmpty(valor2.Text))
-            {
-                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
-                return;
-            }
-                MessageBox.Show("La hipotenusa es" + hipotenusa);
+            MessageBox.Show("La hipotenusa es" + " " + hipotenusa);
+
+            valor1.Text = "";
+            valor2.Text = "";
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
