@@ -68,11 +68,11 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.listNumeros = new System.Windows.Forms.ListBox();
             this.btnNumeros = new System.Windows.Forms.Button();
             this.valor1 = new System.Windows.Forms.NumericUpDown();
             this.valor2 = new System.Windows.Forms.NumericUpDown();
             this.txtAno = new System.Windows.Forms.TextBox();
+            this.numerosAlCien = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -506,7 +506,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.listNumeros);
+            this.groupBox7.Controls.Add(this.numerosAlCien);
             this.groupBox7.Controls.Add(this.btnNumeros);
             this.groupBox7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(48, 41);
@@ -515,15 +515,6 @@
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Los numeros pares del 1 al 100";
-            // 
-            // listNumeros
-            // 
-            this.listNumeros.FormattingEnabled = true;
-            this.listNumeros.ItemHeight = 16;
-            this.listNumeros.Location = new System.Drawing.Point(6, 59);
-            this.listNumeros.Name = "listNumeros";
-            this.listNumeros.Size = new System.Drawing.Size(379, 228);
-            this.listNumeros.TabIndex = 4;
             // 
             // btnNumeros
             // 
@@ -566,6 +557,13 @@
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(118, 22);
             this.txtAno.TabIndex = 2;
+            // 
+            // numerosAlCien
+            // 
+            this.numerosAlCien.Location = new System.Drawing.Point(6, 67);
+            this.numerosAlCien.Name = "numerosAlCien";
+            this.numerosAlCien.Size = new System.Drawing.Size(379, 223);
+            this.numerosAlCien.TabIndex = 2;
             // 
             // Form1
             // 
@@ -647,11 +645,11 @@
         private System.Windows.Forms.Button btnAno;
         private System.Windows.Forms.TextBox txtMes;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ListBox listNumeros;
         private System.Windows.Forms.Button btnNumeros;
         private System.Windows.Forms.NumericUpDown valor2;
         private System.Windows.Forms.NumericUpDown valor1;
         private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.Label numerosAlCien;
     }
 }
 

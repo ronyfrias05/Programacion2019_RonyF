@@ -126,7 +126,7 @@ namespace EjerciciosFinales
             }
 
             var anio = Convert.ToInt16(txtAno.Text);
-            var resta = anio - 2019;
+            var resta = 2019 - anio;
 
             MessageBox.Show("Tu edad es" + " " + resta);
         }
@@ -134,16 +134,116 @@ namespace EjerciciosFinales
         private void btnSemana_Click(object sender, EventArgs e)
         {
             // La semana #5
+            if (string.IsNullOrEmpty(txtDia.Text))
+            {
+                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
+                return;
+            }
+
+            var diaSemana = Convert.ToInt16(txtDia.Text);
+            
+            if (diaSemana < 0 || diaSemana >= 8) 
+            {
+                MessageBox.Show("No intentes lo que no se puede.");
+                return;
+            }
+
+
+            if (diaSemana == 1) {
+                MessageBox.Show("Ese dia es Domingo.");
+            } else if (diaSemana == 2) {
+                MessageBox.Show("Ese dia es Lune.");
+            } else if (diaSemana == 3) {
+                 MessageBox.Show("Ese dia es Marte.");
+            } else if (diaSemana == 4) {
+                MessageBox.Show("Ese dia es Miercole.");
+            } else if (diaSemana == 5) {
+                MessageBox.Show("Ese dia es Jueve.");
+            } else if (diaSemana == 6) {
+                MessageBox.Show("Ese dia es Vierne.");
+            } else if (diaSemana == 7) {
+                 MessageBox.Show("Ese dia es Sabado.");
+            }
+
+            txtDia.Text = "";
         }
 
         private void btnAno_Click(object sender, EventArgs e)
         {
             // El mes #6
+            if (string.IsNullOrEmpty(txtMes.Text))
+            {
+                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
+                return;
+            }
+
+            var mesAnio = Convert.ToInt16(txtMes.Text);
+
+            if (mesAnio < 0 || mesAnio >= 12)
+            {
+                MessageBox.Show("No intentes lo que no se puede.");
+                return;
+            }
+
+
+            if (mesAnio == 1)
+            {
+                MessageBox.Show("Ese dia es Enero.");
+            }
+            else if (mesAnio == 2)
+            {
+                MessageBox.Show("Ese dia es Febrero.");
+            }
+            else if (mesAnio == 3)
+            {
+                MessageBox.Show("Ese dia es Marzo.");
+            }
+            else if (mesAnio == 4)
+            {
+                MessageBox.Show("Ese dia es Abril.");
+            }
+            else if (mesAnio == 5)
+            {
+                MessageBox.Show("Ese dia es Mayo.");
+            }
+            else if (mesAnio == 6)
+            {
+                MessageBox.Show("Ese dia es Junio.");
+            }
+            else if (mesAnio == 7)
+            {
+                MessageBox.Show("Ese dia es Julio.");
+            }
+            else if (mesAnio == 8)
+            {
+                MessageBox.Show("Ese dia es Agosto.");
+            }
+            else if (mesAnio == 9)
+            {
+                MessageBox.Show("Ese dia es Septiembre.");
+            }
+            else if (mesAnio == 10)
+            {
+                MessageBox.Show("Ese dia es Octubre.");
+            }
+            else if (mesAnio == 11)
+            {
+                MessageBox.Show("Ese dia es Noviembre.");
+            }
+            else if (mesAnio == 12)
+            {
+                MessageBox.Show("Ese dia es Diciembre.");
+            }
+            txtMes.Text = "";
         }
 
         private void btnNumeros_Click(object sender, EventArgs e)
         {
             // Numeros pares del 1 al 100 #7
+            for (var i = 0; i <= 100; i++) {
+            if(i%2 == 0)
+            numerosAlCien.Text += i.ToString() + ", ";
+            }
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
