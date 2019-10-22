@@ -110,15 +110,18 @@ namespace EjerciciosFinales
                 return;
             }
 
-            var segundos = Convert.ToInt32(txtS);
-            var tiempo = Convert.ToInt32(txtT);
+            var segundos = Convert.ToInt32(txtS.Text);
+            var tiempo = Convert.ToInt32(txtT.Text);
 
-            MessageBox.Show("La distancia rrecorida a cualquier lugar es" + " " + segundos * tiempo + "Kilometros");
+            MessageBox.Show("La distancia rrecorida a cualquier lugar es" + " " + segundos * tiempo + " " + "Kilometros");
         }
 
         private void btnEdad_Click(object sender, EventArgs e)
         {
             // La edad #4
+            var anio = Convert.ToInt16(txtAno.Text);
+
+            MessageBox.Show("Tu edad es" + " " + anio - 2019);
         }
 
         private void btnSemana_Click(object sender, EventArgs e)
