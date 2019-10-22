@@ -119,9 +119,9 @@ namespace EjerciciosFinales
         private void btnEdad_Click(object sender, EventArgs e)
         {
             // La edad #4
-            var anio = Convert.ToInt16(txtAno.Text);
+            var anio = txtAno.Value - 2019;
 
-            MessageBox.Show("Tu edad es" + " " + anio - 2019);
+            MessageBox.Show("Tu edad es" + " " + anio);
         }
 
         private void btnSemana_Click(object sender, EventArgs e)

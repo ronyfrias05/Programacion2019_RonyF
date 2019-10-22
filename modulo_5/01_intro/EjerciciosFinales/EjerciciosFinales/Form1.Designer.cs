@@ -55,7 +55,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnEdad = new System.Windows.Forms.Button();
-            this.txtAno = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnSemana = new System.Windows.Forms.Button();
@@ -73,6 +72,7 @@
             this.btnNumeros = new System.Windows.Forms.Button();
             this.valor1 = new System.Windows.Forms.NumericUpDown();
             this.valor2 = new System.Windows.Forms.NumericUpDown();
+            this.txtAno = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,6 +90,7 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAno)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -358,12 +359,12 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnEdad);
             this.groupBox4.Controls.Add(this.txtAno);
+            this.groupBox4.Controls.Add(this.btnEdad);
             this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(36, 40);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(227, 73);
+            this.groupBox4.Size = new System.Drawing.Size(258, 73);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "El año nacimiento";
@@ -371,20 +372,13 @@
             // btnEdad
             // 
             this.btnEdad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdad.Location = new System.Drawing.Point(112, 37);
+            this.btnEdad.Location = new System.Drawing.Point(143, 36);
             this.btnEdad.Name = "btnEdad";
             this.btnEdad.Size = new System.Drawing.Size(108, 23);
             this.btnEdad.TabIndex = 1;
             this.btnEdad.Text = "Ver tu edad";
             this.btnEdad.UseVisualStyleBackColor = true;
             this.btnEdad.Click += new System.EventHandler(this.btnEdad_Click);
-            // 
-            // txtAno
-            // 
-            this.txtAno.Location = new System.Drawing.Point(6, 37);
-            this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(100, 22);
-            this.txtAno.TabIndex = 0;
             // 
             // tabPage5
             // 
@@ -546,6 +540,11 @@
             // valor1
             // 
             this.valor1.Location = new System.Drawing.Point(15, 29);
+            this.valor1.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.valor1.Name = "valor1";
             this.valor1.Size = new System.Drawing.Size(120, 22);
             this.valor1.TabIndex = 5;
@@ -553,9 +552,26 @@
             // valor2
             // 
             this.valor2.Location = new System.Drawing.Point(141, 30);
+            this.valor2.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.valor2.Name = "valor2";
             this.valor2.Size = new System.Drawing.Size(120, 22);
             this.valor2.TabIndex = 6;
+            // 
+            // txtAno
+            // 
+            this.txtAno.Location = new System.Drawing.Point(17, 37);
+            this.txtAno.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(120, 22);
+            this.txtAno.TabIndex = 2;
             // 
             // Form1
             // 
@@ -579,7 +595,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -591,6 +606,7 @@
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.valor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAno)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -630,7 +646,6 @@
         private System.Windows.Forms.TextBox txtS;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnEdad;
-        private System.Windows.Forms.TextBox txtAno;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnSemana;
         private System.Windows.Forms.TextBox txtDia;
@@ -642,6 +657,7 @@
         private System.Windows.Forms.Button btnNumeros;
         private System.Windows.Forms.NumericUpDown valor2;
         private System.Windows.Forms.NumericUpDown valor1;
+        private System.Windows.Forms.NumericUpDown txtAno;
     }
 }
 
