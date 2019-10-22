@@ -80,11 +80,40 @@ namespace EjerciciosFinales
         private void btnNotas_Click(object sender, EventArgs e)
         {
             // La Notas #2
+            if (string.IsNullOrEmpty(txtNota1.Text) || string.IsNullOrEmpty(txtNota2.Text) || string.IsNullOrEmpty(txtNota3.Text) || string.IsNullOrEmpty(txtNota4.Text))
+            {
+                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
+                return;
+            }
+
+            var nota1 = Convert.ToInt16(txtNota1.Text);
+            var nota2 = Convert.ToInt16(txtNota2.Text);
+            var nota3 = Convert.ToInt16(txtNota3.Text);
+            var nota4 = Convert.ToInt16(txtNota4.Text);
+
+            var promedio = nota1 + nota2 + nota3 + nota4;
+
+            MessageBox.Show("El promedio es" + " " + promedio / 4);
+
+            txtNota1.Text = "";
+            txtNota2.Text = "";
+            txtNota3.Text = "";
+            txtNota4.Text = "";
         }
 
         private void btnD_Click(object sender, EventArgs e)
         {
             // La distancias #3
+            if (string.IsNullOrEmpty(txtS.Text) || string.IsNullOrEmpty(txtT.Text))
+            {
+                MessageBox.Show("Complete las correspondientes casillas, para ver el resultado");
+                return;
+            }
+
+            var segundos = Convert.ToInt32(txtS);
+            var tiempo = Convert.ToInt32(txtT);
+
+            MessageBox.Show("La distancia rrecorida a cualquier lugar es" + " " + segundos * tiempo + "Kilometros");
         }
 
         private void btnEdad_Click(object sender, EventArgs e)
@@ -105,6 +134,16 @@ namespace EjerciciosFinales
         private void btnNumeros_Click(object sender, EventArgs e)
         {
             // Numeros pares del 1 al 100 #7
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtS_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
