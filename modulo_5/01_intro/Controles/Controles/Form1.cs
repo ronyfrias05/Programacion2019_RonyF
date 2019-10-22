@@ -95,6 +95,12 @@ namespace Controles
 
             // Eleminar
             listBox1.Items.Remove(seleccionar);
+
+            for (int x = listBox1.SelectedIndices.Count - 1; x >= 0; x--)
+            {
+                int idx = listBox1.SelectedIndices[x];
+                listBox1.Items.RemoveAt(idx);
+            } 
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
